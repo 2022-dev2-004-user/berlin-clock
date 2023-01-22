@@ -17,10 +17,7 @@ class BerlinClockViewModel {
 
     func generateClock() {
         let now = Date()
-        let dateFormatter = DateFormatter()
         let calendar = Calendar.current
-        
-        dateFormatter.dateFormat = "HH:MM:ss"
         
         let minutes = calendar.component(.minute, from: now)
         let hours = calendar.component(.hour, from: now)
@@ -30,8 +27,8 @@ class BerlinClockViewModel {
         fiveMinuteBlocks = fiveMinuteBlocks(for: minutes)
         singleHourBlocks = singleHourBlocks(for: hours)
         fiveHoursBlocks = fiveHourBlocks(for: hours)
-        setSecondsBlock(for: seconds)
-        currentTime = dateFormatter.string(from: now)
+        secondsBlock = secondsBlock(for: seconds)
+        currentTime = "\(hours):\(minutes):\(String(format: "%02d", seconds))"
     }
     
     private func singleMinuteBlocks(for minutes: Int) -> Int {
@@ -108,7 +105,7 @@ class BerlinClockViewModel {
         }
     }
     
-    private func setSecondsBlock(for seconds: Int) {
-        secondsBlock = seconds % 2 == 0 ? .yellow : .off
+    private func secondsBlock(for seconds: Int) -> BlockMode {
+        return seconds % 2 == 0 ? .yellow : .off
     }
 }
