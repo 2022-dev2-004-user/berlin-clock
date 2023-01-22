@@ -12,7 +12,7 @@ class BerlinClockViewModel {
     var fiveMinuteBlocks: Int = 0
     var singleHourBlocks: Int = 0
     var fiveHoursBlocks: Int = 0
-    var secondsBlock: Int = 0
+    var secondsBlock: Bool = false
     
     func generateClock() {
         let now = Date()
@@ -22,17 +22,17 @@ class BerlinClockViewModel {
         dateFormatter.dateFormat = "hh:MM:ss"
         
         let currentTime = dateFormatter.string(from: now)
-        let minute = calendar.component(.minute, from: now)
-        let hour = calendar.component(.hour, from: now)
+        let minutes = calendar.component(.minute, from: now)
+        let hours = calendar.component(.hour, from: now)
+        let seconds = calendar.component(.second, from: now)
         
-        singleMinuteBlocks(for: minute % 10)
-        fiveMinuteBlocks(for: minute / 10)
-        singleHourBlocks(for: hour % 10)
-        fiveHoursBlocks(for: hour)
+        setMinuteBlocks(for: minutes)
+        setHourBlocks(for: hours)
+        setSecondsBlock(for: seconds)
     }
     
-    private func singleMinuteBlocks(for minute: Int) {
-        switch minute {
+    private func setMinuteBlocks(for minutes: Int) {
+        switch minutes % 10 {
         case 1, 6:
             singleMinuteBlocks = 1
         case 2, 7:
@@ -44,10 +44,8 @@ class BerlinClockViewModel {
         default:
             singleMinuteBlocks = 0
         }
-    }
-    
-    private func fiveMinuteBlocks(for minutes: Int) {
-        switch minutes {
+        
+        switch minutes / 10 {
         case _ where minutes < 5:
             fiveMinuteBlocks = 0
         case _ where minutes < 10:
@@ -75,8 +73,8 @@ class BerlinClockViewModel {
         }
     }
     
-    private func singleHourBlocks(for hour: Int) {
-        switch hour {
+    private func setHourBlocks(for hours: Int) {
+        switch hours % 10 {
         case 1, 6:
             singleMinuteBlocks = 1
         case 2, 7:
@@ -88,9 +86,7 @@ class BerlinClockViewModel {
         default:
             singleMinuteBlocks = 0
         }
-    }
-    
-    private func fiveHoursBlocks(for hours: Int) {
+        
         switch hours {
         case _ where hours < 5:
             fiveHoursBlocks = 0
@@ -105,7 +101,7 @@ class BerlinClockViewModel {
         }
     }
     
-    private func secondsBlock() {
-        
+    private func setSecondsBlock(for seconds: Int) {
+        secondsBlock = seconds % 2 == 0
     }
 }
