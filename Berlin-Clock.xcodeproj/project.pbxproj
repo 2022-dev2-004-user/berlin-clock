@@ -17,6 +17,7 @@
 		87F61E68297D49790086E222 /* Berlin_ClockTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F61E67297D49790086E222 /* Berlin_ClockTests.swift */; };
 		87F61E72297D49790086E222 /* Berlin_ClockUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F61E71297D49790086E222 /* Berlin_ClockUITests.swift */; };
 		87F61E74297D49790086E222 /* Berlin_ClockUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F61E73297D49790086E222 /* Berlin_ClockUITestsLaunchTests.swift */; };
+		87F61E86297D59CA0086E222 /* Block.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F61E85297D59CA0086E222 /* Block.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		87F61E6D297D49790086E222 /* Berlin-ClockUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Berlin-ClockUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		87F61E71297D49790086E222 /* Berlin_ClockUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Berlin_ClockUITests.swift; sourceTree = "<group>"; };
 		87F61E73297D49790086E222 /* Berlin_ClockUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Berlin_ClockUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		87F61E85297D59CA0086E222 /* Block.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Block.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 		87F61E4C297D49770086E222 /* Berlin-Clock */ = {
 			isa = PBXGroup;
 			children = (
+				87F61E84297D599E0086E222 /* Model */,
 				87F61E83297D54130086E222 /* Delegates */,
 				87F61E82297D53F30086E222 /* Support */,
 				87F61E81297D53DD0086E222 /* ViewController */,
@@ -160,6 +163,14 @@
 				87F61E4F297D49770086E222 /* SceneDelegate.swift */,
 			);
 			path = Delegates;
+			sourceTree = "<group>";
+		};
+		87F61E84297D599E0086E222 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				87F61E85297D59CA0086E222 /* Block.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -295,6 +306,7 @@
 			files = (
 				87F61E58297D49770086E222 /* Berlin_Clock.xcdatamodeld in Sources */,
 				87F61E52297D49770086E222 /* ViewController.swift in Sources */,
+				87F61E86297D59CA0086E222 /* Block.swift in Sources */,
 				87F61E4E297D49770086E222 /* AppDelegate.swift in Sources */,
 				87F61E50297D49770086E222 /* SceneDelegate.swift in Sources */,
 			);
