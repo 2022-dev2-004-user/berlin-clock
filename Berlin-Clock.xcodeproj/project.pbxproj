@@ -1,0 +1,656 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		87F61E4E297D49770086E222 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F61E4D297D49770086E222 /* AppDelegate.swift */; };
+		87F61E50297D49770086E222 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F61E4F297D49770086E222 /* SceneDelegate.swift */; };
+		87F61E52297D49770086E222 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F61E51297D49770086E222 /* ViewController.swift */; };
+		87F61E55297D49770086E222 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87F61E53297D49770086E222 /* Main.storyboard */; };
+		87F61E58297D49770086E222 /* Berlin_Clock.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 87F61E56297D49770086E222 /* Berlin_Clock.xcdatamodeld */; };
+		87F61E5A297D49790086E222 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87F61E59297D49790086E222 /* Assets.xcassets */; };
+		87F61E5D297D49790086E222 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87F61E5B297D49790086E222 /* LaunchScreen.storyboard */; };
+		87F61E68297D49790086E222 /* Berlin_ClockTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F61E67297D49790086E222 /* Berlin_ClockTests.swift */; };
+		87F61E72297D49790086E222 /* Berlin_ClockUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F61E71297D49790086E222 /* Berlin_ClockUITests.swift */; };
+		87F61E74297D49790086E222 /* Berlin_ClockUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F61E73297D49790086E222 /* Berlin_ClockUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		87F61E64297D49790086E222 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 87F61E42297D49770086E222 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 87F61E49297D49770086E222;
+			remoteInfo = "Berlin-Clock";
+		};
+		87F61E6E297D49790086E222 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 87F61E42297D49770086E222 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 87F61E49297D49770086E222;
+			remoteInfo = "Berlin-Clock";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		87F61E4A297D49770086E222 /* Berlin-Clock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Berlin-Clock.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		87F61E4D297D49770086E222 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		87F61E4F297D49770086E222 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		87F61E51297D49770086E222 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		87F61E54297D49770086E222 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		87F61E57297D49770086E222 /* Berlin_Clock.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Berlin_Clock.xcdatamodel; sourceTree = "<group>"; };
+		87F61E59297D49790086E222 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		87F61E5C297D49790086E222 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		87F61E5E297D49790086E222 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		87F61E63297D49790086E222 /* Berlin-ClockTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Berlin-ClockTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		87F61E67297D49790086E222 /* Berlin_ClockTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Berlin_ClockTests.swift; sourceTree = "<group>"; };
+		87F61E6D297D49790086E222 /* Berlin-ClockUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Berlin-ClockUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		87F61E71297D49790086E222 /* Berlin_ClockUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Berlin_ClockUITests.swift; sourceTree = "<group>"; };
+		87F61E73297D49790086E222 /* Berlin_ClockUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Berlin_ClockUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		87F61E47297D49770086E222 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		87F61E60297D49790086E222 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		87F61E6A297D49790086E222 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		87F61E41297D49770086E222 = {
+			isa = PBXGroup;
+			children = (
+				87F61E4C297D49770086E222 /* Berlin-Clock */,
+				87F61E66297D49790086E222 /* Berlin-ClockTests */,
+				87F61E70297D49790086E222 /* Berlin-ClockUITests */,
+				87F61E4B297D49770086E222 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		87F61E4B297D49770086E222 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				87F61E4A297D49770086E222 /* Berlin-Clock.app */,
+				87F61E63297D49790086E222 /* Berlin-ClockTests.xctest */,
+				87F61E6D297D49790086E222 /* Berlin-ClockUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		87F61E4C297D49770086E222 /* Berlin-Clock */ = {
+			isa = PBXGroup;
+			children = (
+				87F61E83297D54130086E222 /* Delegates */,
+				87F61E82297D53F30086E222 /* Support */,
+				87F61E81297D53DD0086E222 /* ViewController */,
+				87F61E80297D53450086E222 /* View */,
+				87F61E5E297D49790086E222 /* Info.plist */,
+				87F61E56297D49770086E222 /* Berlin_Clock.xcdatamodeld */,
+			);
+			path = "Berlin-Clock";
+			sourceTree = "<group>";
+		};
+		87F61E66297D49790086E222 /* Berlin-ClockTests */ = {
+			isa = PBXGroup;
+			children = (
+				87F61E67297D49790086E222 /* Berlin_ClockTests.swift */,
+			);
+			path = "Berlin-ClockTests";
+			sourceTree = "<group>";
+		};
+		87F61E70297D49790086E222 /* Berlin-ClockUITests */ = {
+			isa = PBXGroup;
+			children = (
+				87F61E71297D49790086E222 /* Berlin_ClockUITests.swift */,
+				87F61E73297D49790086E222 /* Berlin_ClockUITestsLaunchTests.swift */,
+			);
+			path = "Berlin-ClockUITests";
+			sourceTree = "<group>";
+		};
+		87F61E80297D53450086E222 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				87F61E53297D49770086E222 /* Main.storyboard */,
+				87F61E5B297D49790086E222 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		87F61E81297D53DD0086E222 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				87F61E51297D49770086E222 /* ViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		87F61E82297D53F30086E222 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				87F61E59297D49790086E222 /* Assets.xcassets */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		87F61E83297D54130086E222 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				87F61E4D297D49770086E222 /* AppDelegate.swift */,
+				87F61E4F297D49770086E222 /* SceneDelegate.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		87F61E49297D49770086E222 /* Berlin-Clock */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 87F61E77297D49790086E222 /* Build configuration list for PBXNativeTarget "Berlin-Clock" */;
+			buildPhases = (
+				87F61E46297D49770086E222 /* Sources */,
+				87F61E47297D49770086E222 /* Frameworks */,
+				87F61E48297D49770086E222 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Berlin-Clock";
+			productName = "Berlin-Clock";
+			productReference = 87F61E4A297D49770086E222 /* Berlin-Clock.app */;
+			productType = "com.apple.product-type.application";
+		};
+		87F61E62297D49790086E222 /* Berlin-ClockTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 87F61E7A297D49790086E222 /* Build configuration list for PBXNativeTarget "Berlin-ClockTests" */;
+			buildPhases = (
+				87F61E5F297D49790086E222 /* Sources */,
+				87F61E60297D49790086E222 /* Frameworks */,
+				87F61E61297D49790086E222 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				87F61E65297D49790086E222 /* PBXTargetDependency */,
+			);
+			name = "Berlin-ClockTests";
+			productName = "Berlin-ClockTests";
+			productReference = 87F61E63297D49790086E222 /* Berlin-ClockTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		87F61E6C297D49790086E222 /* Berlin-ClockUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 87F61E7D297D49790086E222 /* Build configuration list for PBXNativeTarget "Berlin-ClockUITests" */;
+			buildPhases = (
+				87F61E69297D49790086E222 /* Sources */,
+				87F61E6A297D49790086E222 /* Frameworks */,
+				87F61E6B297D49790086E222 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				87F61E6F297D49790086E222 /* PBXTargetDependency */,
+			);
+			name = "Berlin-ClockUITests";
+			productName = "Berlin-ClockUITests";
+			productReference = 87F61E6D297D49790086E222 /* Berlin-ClockUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		87F61E42297D49770086E222 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					87F61E49297D49770086E222 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					87F61E62297D49790086E222 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 87F61E49297D49770086E222;
+					};
+					87F61E6C297D49790086E222 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 87F61E49297D49770086E222;
+					};
+				};
+			};
+			buildConfigurationList = 87F61E45297D49770086E222 /* Build configuration list for PBXProject "Berlin-Clock" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 87F61E41297D49770086E222;
+			productRefGroup = 87F61E4B297D49770086E222 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				87F61E49297D49770086E222 /* Berlin-Clock */,
+				87F61E62297D49790086E222 /* Berlin-ClockTests */,
+				87F61E6C297D49790086E222 /* Berlin-ClockUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		87F61E48297D49770086E222 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87F61E5D297D49790086E222 /* LaunchScreen.storyboard in Resources */,
+				87F61E5A297D49790086E222 /* Assets.xcassets in Resources */,
+				87F61E55297D49770086E222 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		87F61E61297D49790086E222 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		87F61E6B297D49790086E222 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		87F61E46297D49770086E222 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87F61E58297D49770086E222 /* Berlin_Clock.xcdatamodeld in Sources */,
+				87F61E52297D49770086E222 /* ViewController.swift in Sources */,
+				87F61E4E297D49770086E222 /* AppDelegate.swift in Sources */,
+				87F61E50297D49770086E222 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		87F61E5F297D49790086E222 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87F61E68297D49790086E222 /* Berlin_ClockTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		87F61E69297D49790086E222 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87F61E72297D49790086E222 /* Berlin_ClockUITests.swift in Sources */,
+				87F61E74297D49790086E222 /* Berlin_ClockUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		87F61E65297D49790086E222 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 87F61E49297D49770086E222 /* Berlin-Clock */;
+			targetProxy = 87F61E64297D49790086E222 /* PBXContainerItemProxy */;
+		};
+		87F61E6F297D49790086E222 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 87F61E49297D49770086E222 /* Berlin-Clock */;
+			targetProxy = 87F61E6E297D49790086E222 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		87F61E53297D49770086E222 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				87F61E54297D49770086E222 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		87F61E5B297D49790086E222 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				87F61E5C297D49790086E222 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		87F61E75297D49790086E222 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		87F61E76297D49790086E222 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		87F61E78297D49790086E222 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 92RWZYGPSA;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Berlin-Clock/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.danielcaccia.Berlin-Clock";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		87F61E79297D49790086E222 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 92RWZYGPSA;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Berlin-Clock/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.danielcaccia.Berlin-Clock";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		87F61E7B297D49790086E222 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 92RWZYGPSA;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.danielcaccia.Berlin-ClockTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Berlin-Clock.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Berlin-Clock";
+			};
+			name = Debug;
+		};
+		87F61E7C297D49790086E222 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 92RWZYGPSA;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.danielcaccia.Berlin-ClockTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Berlin-Clock.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Berlin-Clock";
+			};
+			name = Release;
+		};
+		87F61E7E297D49790086E222 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 92RWZYGPSA;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.danielcaccia.Berlin-ClockUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Berlin-Clock";
+			};
+			name = Debug;
+		};
+		87F61E7F297D49790086E222 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 92RWZYGPSA;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.danielcaccia.Berlin-ClockUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Berlin-Clock";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		87F61E45297D49770086E222 /* Build configuration list for PBXProject "Berlin-Clock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				87F61E75297D49790086E222 /* Debug */,
+				87F61E76297D49790086E222 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		87F61E77297D49790086E222 /* Build configuration list for PBXNativeTarget "Berlin-Clock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				87F61E78297D49790086E222 /* Debug */,
+				87F61E79297D49790086E222 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		87F61E7A297D49790086E222 /* Build configuration list for PBXNativeTarget "Berlin-ClockTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				87F61E7B297D49790086E222 /* Debug */,
+				87F61E7C297D49790086E222 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		87F61E7D297D49790086E222 /* Build configuration list for PBXNativeTarget "Berlin-ClockUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				87F61E7E297D49790086E222 /* Debug */,
+				87F61E7F297D49790086E222 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		87F61E56297D49770086E222 /* Berlin_Clock.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				87F61E57297D49770086E222 /* Berlin_Clock.xcdatamodel */,
+			);
+			currentVersion = 87F61E57297D49770086E222 /* Berlin_Clock.xcdatamodel */;
+			path = Berlin_Clock.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 87F61E42297D49770086E222 /* Project object */;
+}
