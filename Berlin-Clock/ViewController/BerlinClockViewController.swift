@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  BerlinClockViewController.swift
 //  Berlin-Clock
 //
 //  Created by Daniel Caccia on 22/01/2023.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class BerlinClockViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
