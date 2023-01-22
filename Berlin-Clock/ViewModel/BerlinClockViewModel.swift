@@ -23,9 +23,12 @@ class BerlinClockViewModel {
         
         let currentTime = dateFormatter.string(from: now)
         let minute = calendar.component(.minute, from: now)
+        let hour = calendar.component(.hour, from: now)
         
         singleMinuteBlocks(for: minute % 10)
-        fiveMinuteBlocks(for: minute / 10 )
+        fiveMinuteBlocks(for: minute / 10)
+        singleHourBlocks(for: hour % 10)
+        fiveHoursBlocks(for: hour)
     }
     
     private func singleMinuteBlocks(for minute: Int) {
@@ -72,12 +75,34 @@ class BerlinClockViewModel {
         }
     }
     
-    private func singleHourBlocks() {
-        
+    private func singleHourBlocks(for hour: Int) {
+        switch hour {
+        case 1, 6:
+            singleMinuteBlocks = 1
+        case 2, 7:
+            singleMinuteBlocks = 2
+        case 3, 8:
+            singleMinuteBlocks = 3
+        case 4, 9:
+            singleMinuteBlocks = 4
+        default:
+            singleMinuteBlocks = 0
+        }
     }
     
-    private func fiveHoursBlocks() {
-        
+    private func fiveHoursBlocks(for hours: Int) {
+        switch hours {
+        case _ where hours < 5:
+            fiveHoursBlocks = 0
+        case _ where hours < 10:
+            fiveHoursBlocks = 1
+        case _ where hours < 15:
+            fiveHoursBlocks = 2
+        case _ where hours < 20:
+            fiveHoursBlocks = 3
+        default:
+            fiveMinuteBlocks = 4
+        }
     }
     
     private func secondsBlock() {
