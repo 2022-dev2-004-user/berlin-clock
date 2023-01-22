@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		87EAF52A297DB529003F0869 /* SquareBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87EAF529297DB529003F0869 /* SquareBlock.swift */; };
 		87F61E4E297D49770086E222 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F61E4D297D49770086E222 /* AppDelegate.swift */; };
 		87F61E50297D49770086E222 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F61E4F297D49770086E222 /* SceneDelegate.swift */; };
 		87F61E52297D49770086E222 /* BerlinClockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F61E51297D49770086E222 /* BerlinClockViewController.swift */; };
@@ -18,9 +19,7 @@
 		87F61E72297D49790086E222 /* Berlin_ClockUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F61E71297D49790086E222 /* Berlin_ClockUITests.swift */; };
 		87F61E74297D49790086E222 /* Berlin_ClockUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F61E73297D49790086E222 /* Berlin_ClockUITestsLaunchTests.swift */; };
 		87F61E89297D5EF60086E222 /* BerlinClockViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F61E88297D5EF60086E222 /* BerlinClockViewModel.swift */; };
-		87F61E8C297D78070086E222 /* BlockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F61E8B297D78070086E222 /* BlockView.swift */; };
-		87F61E8E297D7B3C0086E222 /* RoundBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F61E8D297D7B3C0086E222 /* RoundBlock.swift */; };
-		87F61E90297D7BDB0086E222 /* SquareBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F61E8F297D7BDB0086E222 /* SquareBlock.swift */; };
+		87F61E8E297D7B3C0086E222 /* Block.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F61E8D297D7B3C0086E222 /* Block.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		87EAF529297DB529003F0869 /* SquareBlock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquareBlock.swift; sourceTree = "<group>"; };
 		87F61E4A297D49770086E222 /* Berlin-Clock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Berlin-Clock.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		87F61E4D297D49770086E222 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		87F61E4F297D49770086E222 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -56,9 +56,7 @@
 		87F61E71297D49790086E222 /* Berlin_ClockUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Berlin_ClockUITests.swift; sourceTree = "<group>"; };
 		87F61E73297D49790086E222 /* Berlin_ClockUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Berlin_ClockUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		87F61E88297D5EF60086E222 /* BerlinClockViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BerlinClockViewModel.swift; sourceTree = "<group>"; };
-		87F61E8B297D78070086E222 /* BlockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockView.swift; sourceTree = "<group>"; };
-		87F61E8D297D7B3C0086E222 /* RoundBlock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundBlock.swift; sourceTree = "<group>"; };
-		87F61E8F297D7BDB0086E222 /* SquareBlock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquareBlock.swift; sourceTree = "<group>"; };
+		87F61E8D297D7B3C0086E222 /* Block.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Block.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,9 +140,8 @@
 		87F61E80297D53450086E222 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				87F61E8B297D78070086E222 /* BlockView.swift */,
-				87F61E8D297D7B3C0086E222 /* RoundBlock.swift */,
-				87F61E8F297D7BDB0086E222 /* SquareBlock.swift */,
+				87F61E8D297D7B3C0086E222 /* Block.swift */,
+				87EAF529297DB529003F0869 /* SquareBlock.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -315,11 +312,10 @@
 			files = (
 				87F61E58297D49770086E222 /* Berlin_Clock.xcdatamodeld in Sources */,
 				87F61E89297D5EF60086E222 /* BerlinClockViewModel.swift in Sources */,
-				87F61E8E297D7B3C0086E222 /* RoundBlock.swift in Sources */,
+				87F61E8E297D7B3C0086E222 /* Block.swift in Sources */,
+				87EAF52A297DB529003F0869 /* SquareBlock.swift in Sources */,
 				87F61E52297D49770086E222 /* BerlinClockViewController.swift in Sources */,
 				87F61E4E297D49770086E222 /* AppDelegate.swift in Sources */,
-				87F61E8C297D78070086E222 /* BlockView.swift in Sources */,
-				87F61E90297D7BDB0086E222 /* SquareBlock.swift in Sources */,
 				87F61E50297D49770086E222 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -505,6 +501,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -533,6 +530,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

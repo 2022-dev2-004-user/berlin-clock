@@ -12,96 +12,103 @@ class BerlinClockViewModel {
     var fiveMinuteBlocks: Int = 0
     var singleHourBlocks: Int = 0
     var fiveHoursBlocks: Int = 0
-    var secondsBlock: Bool = false
-    
+    var secondsBlock: BlockMode = .off
+    var currentTime: String = ""
+
     func generateClock() {
         let now = Date()
         let dateFormatter = DateFormatter()
         let calendar = Calendar.current
         
-        dateFormatter.dateFormat = "hh:MM:ss"
+        dateFormatter.dateFormat = "HH:MM:ss"
         
-        let currentTime = dateFormatter.string(from: now)
         let minutes = calendar.component(.minute, from: now)
         let hours = calendar.component(.hour, from: now)
         let seconds = calendar.component(.second, from: now)
         
-        setMinuteBlocks(for: minutes)
-        setHourBlocks(for: hours)
+        singleMinuteBlocks = singleMinuteBlocks(for: minutes)
+        fiveMinuteBlocks = fiveMinuteBlocks(for: minutes)
+        singleHourBlocks = singleHourBlocks(for: hours)
+        fiveHoursBlocks = fiveHourBlocks(for: hours)
         setSecondsBlock(for: seconds)
+        currentTime = dateFormatter.string(from: now)
     }
     
-    private func setMinuteBlocks(for minutes: Int) {
+    private func singleMinuteBlocks(for minutes: Int) -> Int {
         switch minutes % 10 {
         case 1, 6:
-            singleMinuteBlocks = 1
+            return 1
         case 2, 7:
-            singleMinuteBlocks = 2
+            return 2
         case 3, 8:
-            singleMinuteBlocks = 3
+            return 3
         case 4, 9:
-            singleMinuteBlocks = 4
+            return 4
         default:
-            singleMinuteBlocks = 0
-        }
-        
-        switch minutes / 10 {
-        case _ where minutes < 5:
-            fiveMinuteBlocks = 0
-        case _ where minutes < 10:
-            fiveMinuteBlocks = 1
-        case _ where minutes < 15:
-            fiveMinuteBlocks = 2
-        case _ where minutes < 20:
-            fiveMinuteBlocks = 3
-        case _ where minutes < 25:
-            fiveMinuteBlocks = 4
-        case _ where minutes < 30:
-            fiveMinuteBlocks = 5
-        case _ where minutes < 35:
-            fiveMinuteBlocks = 6
-        case _ where minutes < 40:
-            fiveMinuteBlocks = 7
-        case _ where minutes < 45:
-            fiveMinuteBlocks = 8
-        case _ where minutes < 50:
-            fiveMinuteBlocks = 9
-        case _ where minutes < 55:
-            fiveMinuteBlocks = 10
-        default:
-            fiveMinuteBlocks = 11
+            return 0
         }
     }
     
-    private func setHourBlocks(for hours: Int) {
+    private func fiveMinuteBlocks(for minutes: Int) -> Int {
+        switch minutes / 10 {
+        case _ where minutes < 5:
+            return 0
+        case _ where minutes < 10:
+            return 1
+        case _ where minutes < 15:
+            return 2
+        case _ where minutes < 20:
+            return 3
+        case _ where minutes < 25:
+            return 4
+        case _ where minutes < 30:
+            return 5
+        case _ where minutes < 35:
+            return 6
+        case _ where minutes < 40:
+            return 7
+        case _ where minutes < 45:
+            return 8
+        case _ where minutes < 50:
+            return 9
+        case _ where minutes < 55:
+            return 10
+        default:
+            return 11
+        }
+    }
+    
+    private func singleHourBlocks(for hours: Int) -> Int {
         switch hours % 10 {
         case 1, 6:
-            singleMinuteBlocks = 1
+            return 1
         case 2, 7:
-            singleMinuteBlocks = 2
+            return 2
         case 3, 8:
-            singleMinuteBlocks = 3
+            return 3
         case 4, 9:
-            singleMinuteBlocks = 4
+            return 4
         default:
-            singleMinuteBlocks = 0
+            return 0
         }
-        
+    }
+    
+    private func fiveHourBlocks(for hours: Int) -> Int {
         switch hours {
         case _ where hours < 5:
-            fiveHoursBlocks = 0
+            return 0
         case _ where hours < 10:
-            fiveHoursBlocks = 1
+            return 1
         case _ where hours < 15:
-            fiveHoursBlocks = 2
+            return 2
         case _ where hours < 20:
-            fiveHoursBlocks = 3
+            return 3
         default:
-            fiveMinuteBlocks = 4
+            return 4
         }
     }
     
     private func setSecondsBlock(for seconds: Int) {
-        secondsBlock = seconds % 2 == 0
+        secondsBlock = seconds % 2 == 0 ? .yellow : .off
     }
 }
