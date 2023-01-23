@@ -1,6 +1,6 @@
 # Berlin Clock
 
-image
+<img src="https://github.com/2022-dev2-004-user/berlin-clock/blob/main/berlin-clock-example.png?raw=true" alt="drawing" width="250"/>
 
 ## Getting Started
 
