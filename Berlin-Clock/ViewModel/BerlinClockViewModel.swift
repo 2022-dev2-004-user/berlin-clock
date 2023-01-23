@@ -15,8 +15,7 @@ class BerlinClockViewModel {
     var secondsBlock: BlockMode = .off
     var currentTime: String = ""
 
-    func generateClock() {
-        let now = Date()
+    func generateClock(_ now: Date = Date()) {
         let calendar = Calendar.current
         
         let minutes = calendar.component(.minute, from: now)

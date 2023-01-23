@@ -6,31 +6,60 @@
 //
 
 import XCTest
+
 @testable import Berlin_Clock
 
-final class Berlin_ClockTests: XCTestCase {
+class Berlin_ClockTests: XCTestCase {
+    var date: Date?
 
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+    override func setUp() async throws {
+        let now = "12:34:56"
+        let dateFormatter = DateFormatter()
+        
+        dateFormatter.locale = Locale(identifier: "en_US_POSIX")
+        dateFormatter.dateFormat = "HH:mm:ss"
+        
+        date = dateFormatter.date(from:now)!
+    }
+    
+    func testSingleMinuteBlock() throws {
+        let viewModel = BerlinClockViewModel()
+        viewModel.generateClock(date!)
+        
+        let sut = viewModel.singleMinuteBlocks
+        let expectedNumberOfLitBlocks = 4
+        
+        XCTAssertEqual(sut, expectedNumberOfLitBlocks)
     }
 
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+    func testFiveMinuteBlock() throws {
+        let viewModel = BerlinClockViewModel()
+        viewModel.generateClock(date!)
+        
+        let sut = viewModel.fiveMinuteBlocks
+        let expectedNumberOfLitBlocks = 6
+        
+        XCTAssertEqual(sut, expectedNumberOfLitBlocks)
     }
-
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        // Any test you write for XCTest can be annotated as throws and async.
-        // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
-        // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
+    
+    func testSingleHourBlock() throws {
+        let viewModel = BerlinClockViewModel()
+        viewModel.generateClock(date!)
+        
+        let sut = viewModel.singleHourBlocks
+        let expectedNumberOfLitBlocks = 2
+        
+        XCTAssertEqual(sut, expectedNumberOfLitBlocks)
     }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+    
+    func testFiveHourBlock() throws {
+        let viewModel = BerlinClockViewModel()
+        viewModel.generateClock(date!)
+        
+        let sut = viewModel.fiveHoursBlocks
+        let expectedNumberOfLitBlocks = 2
+        
+        XCTAssertEqual(sut, expectedNumberOfLitBlocks)
     }
 
 }
