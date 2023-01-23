@@ -26,8 +26,6 @@ To get a local copy up and running follow these simple example steps.
    $ open -a Xcode a.xcodeproj
    ```
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 ## Contact
 
 2022-dev2-004 - copieurs-manioc-0@icloud.com
