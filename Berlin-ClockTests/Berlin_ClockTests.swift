@@ -2,7 +2,7 @@
 //  Berlin_ClockTests.swift
 //  Berlin-ClockTests
 //
-//  Created by Daniel Caccia on 22/01/2023.
+//  Created by 2022-dev2-004 on 22/01/2023.
 //
 
 import XCTest
@@ -10,8 +10,12 @@ import XCTest
 @testable import Berlin_Clock
 
 class Berlin_ClockTests: XCTestCase {
+    //MARK: - Properties
+    
     var date: Date?
 
+    //MARK: - Set Up
+    
     override func setUp() async throws {
         let now = "12:34:56"
         let dateFormatter = DateFormatter()
@@ -21,6 +25,8 @@ class Berlin_ClockTests: XCTestCase {
         
         date = dateFormatter.date(from:now)!
     }
+    
+    //MARK: - Tests
     
     func testSingleMinuteBlock() throws {
         let viewModel = BerlinClockViewModel()

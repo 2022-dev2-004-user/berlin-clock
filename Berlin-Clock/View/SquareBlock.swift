@@ -2,7 +2,7 @@
 //  SquareBlocksView.swift
 //  Berlin-Clock
 //
-//  Created by Daniel Caccia on 22/01/2023.
+//  Created by 2022-dev2-004 on 22/01/2023.
 //
 
 import UIKit
@@ -12,6 +12,8 @@ enum SquareBlocksType {
 }
 
 class SquareBlock: Block {
+    //MARK: - Layout
+    
     class Layout {
         static let height: CGFloat = 40
         static let cornerRadius: CGFloat = 25
@@ -19,8 +21,9 @@ class SquareBlock: Block {
         static let roundedBottomLeft: CACornerMask = [.layerMinXMaxYCorner]
         static let roundedBottomRight: CACornerMask = [.layerMaxXMaxYCorner]
         static let roundedTopRight: CACornerMask = [.layerMaxXMinYCorner]
-        
     }
+    
+    //MARK: - Lifecycle
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -31,6 +34,8 @@ class SquareBlock: Block {
     required init?(coder: NSCoder) {
         super.init(coder: coder)
     }
+    
+    //MARK: - UI Config
     
     func roundCorners(_ side: RoundCorners) {
         self.layer.cornerRadius = Layout.cornerRadius

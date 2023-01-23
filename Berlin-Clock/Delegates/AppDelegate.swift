@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  Berlin-Clock
 //
-//  Created by Daniel Caccia on 22/01/2023.
+//  Created by 2022-dev2-004 on 22/01/2023.
 //
 
 import UIKit

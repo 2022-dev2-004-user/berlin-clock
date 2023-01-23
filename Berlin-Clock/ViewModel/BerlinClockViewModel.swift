@@ -2,12 +2,14 @@
 //  BerlinClockViewModel.swift
 //  Berlin-Clock
 //
-//  Created by Daniel Caccia on 22/01/2023.
+//  Created by 2022-dev2-004 on 22/01/2023.
 //
 
 import Foundation
 
 class BerlinClockViewModel {
+    //MARK: - Properties
+    
     var singleMinuteBlocks: Int = 0
     var fiveMinuteBlocks: Int = 0
     var singleHourBlocks: Int = 0
@@ -15,6 +17,8 @@ class BerlinClockViewModel {
     var secondsBlock: BlockMode = .off
     var currentTime: String = ""
 
+    //MARK: - Clock Generator
+    
     func generateClock(_ now: Date = Date()) {
         let calendar = Calendar.current
         
@@ -29,6 +33,8 @@ class BerlinClockViewModel {
         secondsBlock = secondsBlock(for: seconds)
         currentTime = "\(hours):\(minutes):\(String(format: "%02d", seconds))"
     }
+    
+    //MARK: - Blocks Handlers
     
     private func singleMinuteBlocks(for minutes: Int) -> Int {
         switch minutes % 10 {

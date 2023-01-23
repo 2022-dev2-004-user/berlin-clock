@@ -2,17 +2,21 @@
 //  BerlinClockViewController.swift
 //  Berlin-Clock
 //
-//  Created by Daniel Caccia on 22/01/2023.
+//  Created by 2022-dev2-004 on 22/01/2023.
 //
 
 import UIKit
 
 class BerlinClockViewController: UIViewController {
+    //MARK: - Layout
+    
     class Layout {
         static let roundBlockWidth: CGFloat = 60
         static let roundBlockHeight: CGFloat = 60
         static let roundBlockCornerRadius: CGFloat = 30
     }
+    
+    //MARK: - Properties
     
     private lazy var mainStackView: UIStackView = {
         let stack = UIStackView()
@@ -112,6 +116,8 @@ class BerlinClockViewController: UIViewController {
     
     var viewModel = BerlinClockViewModel()
     
+    //MARK: - Lifecycle
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -131,6 +137,19 @@ class BerlinClockViewController: UIViewController {
         }
     }
     
+    //MARK: - Clock Updater
+    
+    private func updateClock() {
+        roundBlock.setBackgroundColor(for: viewModel.secondsBlock)
+        setBackgroundColor(for: firstHourStackView, type: .hours, blocksOn: viewModel.fiveHoursBlocks)
+        setBackgroundColor(for: secondHourStackView, type: .hours, blocksOn: viewModel.singleHourBlocks)
+        setBackgroundColor(for: firstMinuteStackView, type: .firstMinutes, blocksOn: viewModel.fiveMinuteBlocks)
+        setBackgroundColor(for: secondMinuteStackView, type: .secondMinutes, blocksOn: viewModel.singleMinuteBlocks)
+        clockLabel.text = viewModel.currentTime
+    }
+    
+    //MARK: - UI Config
+    
     private func setupConstraints() {
         NSLayoutConstraint.activate([
             mainStackView.topAnchor.constraint(greaterThanOrEqualTo: view.topAnchor, constant: 16),
@@ -147,15 +166,6 @@ class BerlinClockViewController: UIViewController {
             secondMinuteStackView.leadingAnchor.constraint(lessThanOrEqualTo: mainStackView.leadingAnchor),
             secondMinuteStackView.trailingAnchor.constraint(lessThanOrEqualTo: mainStackView.trailingAnchor),
         ])
-    }
-    
-    private func updateClock() {
-        roundBlock.setBackgroundColor(for: viewModel.secondsBlock)
-        setBackgroundColor(for: firstHourStackView, type: .hours, blocksOn: viewModel.fiveHoursBlocks)
-        setBackgroundColor(for: secondHourStackView, type: .hours, blocksOn: viewModel.singleHourBlocks)
-        setBackgroundColor(for: firstMinuteStackView, type: .firstMinutes, blocksOn: viewModel.fiveMinuteBlocks)
-        setBackgroundColor(for: secondMinuteStackView, type: .secondMinutes, blocksOn: viewModel.singleMinuteBlocks)
-        clockLabel.text = viewModel.currentTime
     }
     
     private func setBackgroundColor(for stack: UIStackView, type: SquareBlocksType, blocksOn: Int) {
